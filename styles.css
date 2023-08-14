@@ -1,3 +1,8 @@
+:root {
+    --color: rgb(89, 109, 72);
+    --bckcolor: rgb(249, 250, 251);
+}
+
 body {
     width: 100%;
     height: 100%;
@@ -18,7 +23,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 23vh;
+    margin-top: 40%;
     background-color: rgba(0, 0, 0, 0.527);
 }
 
@@ -34,7 +39,7 @@ h1 {
     gap: 4px;
 }
 
-a {
+.link{
     color: white;
 }
 
@@ -47,7 +52,6 @@ a {
     height: 100%;
     background-image: url(imgs/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
-
 }
 
 .rcontainer {
@@ -56,21 +60,98 @@ a {
 }
 
 .top {
-    border: 2px red solid;
-    height: 39vh;
-    background-color: rgb(249, 250, 251);
+    background-color: var(--bckcolor);
+    padding-top: 10.5%;
+    padding-bottom: 8.7%;
 }
 
 .top p {
-    border: 2px blue solid;
     color: black;
-    margin-left: 5vw;
-    margin-right: 15vw;
-    font-size: 20px;
+    margin-left: 4vw;
+    margin-right: 13vw;
+    font-size: 1.4rem;
     font-weight: bold;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.top .text {
-    margin-top: 16vw;
+.form-title {
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 0.2vh
+}
+
+.form {
+    background-color: white;
+    box-shadow: 0px 1px 30px -2px lightgray;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding-bottom: 20px;
+    padding-left: 4vw;
+}
+
+.input {
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+label {
+    margin-bottom: 3px;
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+input {
+    border: 1px black solid;
+    border-radius: 3px;
+    background-color: var(--bckcolor);
+    border: 1px lightgray solid;
+    height: 20px;
+    width: 200px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid blue;
+}
+
+button {
+    border: 2px solid black;
+    padding: 10px 40px;
+    background-color: var(--color);
+    border: 1px solid var(--color);
+    border-radius: 5px;
+    color: white;
+    margin-left: 4vw;
+    margin-top: 4vw;
+    box-shadow: 1px 2px 1px lightgray;
+}
+
+button:hover {
+    background-color: white;
+    color: var(--color);
+    cursor: pointer;
+}
+
+#password:invalid, #confirm:invalid {
+    border: 2px red solid;
+}
+
+.log-in {
+    display: flex;
+    gap: 5px;
+    padding-left: 4vw;
+    padding-top: 1vw;
+    font-size: 1.2rem;
+}
+
+.log {
+    text-decoration: none;
+    color: var(--color);
+    font-weight: 700;
+    margin-top: 2.2vh;
 }
