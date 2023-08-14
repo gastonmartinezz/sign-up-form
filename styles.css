@@ -137,8 +137,12 @@ button:hover {
     cursor: pointer;
 }
 
-#password:invalid, #confirm:invalid {
-    border: 2px red solid;
+.input-error {
+    border: 1px solid red;
+}
+
+.match {
+    color: red;
 }
 
 .log-in {
